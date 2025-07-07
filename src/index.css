@@ -1,0 +1,171 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #14284B;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  max-height: 100vh;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 100%;
+  display: block;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button span.courseName{
+  display: block;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+button span.offerings{
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  color:hsl(0, 0%, 57%)
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.clickable * {
+  pointer-events: none;
+}
+
+.RenderWindow {
+  height: 85vh;
+  min-height: 85vh;
+  width: 100%;
+  min-width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+#root > div {
+  height: 100%;
+}
+
+.SemesterContainer {
+  outline: 2px solid white;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 100%;
+  max-height: 80vh;
+  min-height: 20vh;
+  width: 20%;
+  min-width: 20vw;
+}
+
+h3, h1 {
+  background-color: #40b4e5;
+  margin-top: 0px;
+}
+
+.deactive {
+  opacity: 20%;
+  color: white;
+}
+
+.deactive * {
+  color: white;
+}
+
+.offering {
+  display: none;
+  background-color: black;
+  float: left;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+.OnlineActive .online{
+  display: block;
+  top: 30px;
+}
+
+.DayActive .day{
+  display: block;
+}
+
+.EveningActive .evening{
+  display: block;
+  top: 60px;
+}
+
+.menu {
+  float: left;
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  left: 0px;
+  top: 0px;
+}
